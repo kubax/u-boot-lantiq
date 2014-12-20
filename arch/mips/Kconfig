@@ -50,8 +50,12 @@ config TARGET_PB1X00
 	select SUPPORTS_CPU_MIPS32_R1
 	select SUPPORTS_CPU_MIPS32_R2
 
+config ARCH_LANTIQ
+	bool "Lantiq based platforms"
 
 endchoice
+
+source "arch/mips/arch-lantiq/Kconfig"
 
 source "board/dbau1x00/Kconfig"
 source "board/imgtec/malta/Kconfig"

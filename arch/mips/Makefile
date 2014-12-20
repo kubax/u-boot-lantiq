@@ -8,3 +8,5 @@ head-$(CONFIG_CPU_MIPS64) := arch/mips/cpu/mips64/start.o
 libs-$(CONFIG_CPU_MIPS32) += arch/mips/cpu/mips32/
 libs-$(CONFIG_CPU_MIPS64) += arch/mips/cpu/mips64/
 libs-y += arch/mips/lib/
+
+libs-$(CONFIG_ARCH_LANTIQ) += arch/mips/arch-lantiq/
