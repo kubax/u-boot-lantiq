@@ -185,6 +185,9 @@ config 64BIT
 config SWAP_IO_SPACE
 	bool
 
+config CPU_DISABLE_CACHES
+	bool
+
 endif
 
 endmenu
