@@ -5,6 +5,12 @@ config DM_SERIAL
 	  If you want to use driver model for serial drivers, say Y.
 	  To use legacy serial drivers, say N.
 
+config LANTIQ_SERIAL
+	bool "Lantiq SoC UART support"
+	depends on ARCH_LANTIQ && DM_SERIAL
+	help
+	  Support for the UART found on Lantiq SoC's.
+
 config UNIPHIER_SERIAL
 	bool "UniPhier on-chip UART support"
 	depends on ARCH_UNIPHIER && DM_SERIAL
